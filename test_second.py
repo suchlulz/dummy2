@@ -1,5 +1,7 @@
 from second import stuff
+import pytest
 
 
 def test_stuff():
-    stuff()
+    with pytest.raises(Exception):
+        stuff()
